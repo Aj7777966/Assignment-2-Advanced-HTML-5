@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Elements</title>
+    <style>
+        header {
+         background-color:rgb(14, 158, 254);
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+         border: 3px solid black;
+         border-style: groove;
+       }
+
+       h1{
+            margin-left:47%; 
+            text-align: center; 
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            color: black; 
+        }
+        body{
+         background-color: cadetblue;   
+        }
+
+        .video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            margin-top: 7%;
+            
+        }
+        .caption{
+            text-align: center;
+            
+        }
+    </style>
+    <header>
+        <h1>HTML 5</h1>
+    </header>
+</head>
+<body>
+    <section class="video">
+        <audio controls>
+            <source src="audio.ogg" type="audio/ogg">
+            <source src="audio.mp3" type="audio/mpeg">
+            
+          </audio>
+    </section>
+    <h4 class="caption">Listen to this melodioius song</h4>
+    <section class="video">
+        <video width="320" height="240" poster="20240621101955_Bugatti_Tourbillon_front.jpg" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            
+          </video>
+    </section>
+    <h4 class="caption">THE BUGATTI TOURBILLION THROTTLE</h4>
+</body>
+</html>

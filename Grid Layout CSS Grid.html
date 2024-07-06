@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+        }
+        .menu1 { 
+            grid-area: Header; 
+        }
+        .menu2 {
+            grid-area: Menu; 
+            }
+        .menu3 {
+            grid-area: Main; 
+            }
+        .menu4 { 
+            grid-area: Right; 
+        }
+        .menu5 { 
+            grid-area: Footer; 
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas:
+            'Header Header Header Header Header Header'
+            'Menu Main Main Main Right Right'
+            'Menu Footer Footer Footer Footer Footer';
+            background-color: brown;
+            gap: 10px;
+        }
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+}
+    </style>
+</head>
+<body>
+    <h1>My first HTML document</h1>
+    <div class="grid-container">
+        <div class="menu1">Header</div>
+        <div class="menu2">Menu</div>
+        <div class="menu3">main</div>
+        <div class="menu4">Right</div>
+        <div class="menu5">Footer</div>
+    </div>
+</body>
+</html>
